@@ -1,0 +1,10 @@
+---
+---
+
+{% include header.html %}
+
+<main class="container prose sm:prose-md md:prose-lg lg:prose-lg xl:prose-xl">
+  {{ content | replace: '<a href="http', '<a rel="ugc noopener noreferrer" href="http' }}
+</main>
+
+{% include footer.html %}
